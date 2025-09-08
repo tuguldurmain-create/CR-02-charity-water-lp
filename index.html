@@ -1,47 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Brand Setup */
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Avenir', sans-serif;
+      background-color: #fffaf3;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .navbar button {
+      margin-left: 1.5rem;
+      background-color: #FFC907;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .hero-left {
+      background-color: #FF902A;
+      color: white;
+      flex: 0 0 25%; /* smaller width */
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-left img.logo {
+      max-width: 150px;
+      margin-bottom: 2rem;
+    }
+
+    /* Center content inside hero-left */
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertical center */
+      align-items: center;     /* horizontal center */
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .hero-content button {
+      background-color: #FFC907;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 1rem 0;
+      color: #000;
+    }
+
+    .hero-content p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .hero-right {
+      flex: 1;
+      background: url("img/KID water.jpg") no-repeat center center;
+      background-size: cover;
+    }
+
+    /* Impact Section */
+    .impact {
+      text-align: center;
+      padding: 2rem;
+      font-weight: 600;
+      color: #FF902A;
+      font-size: 1.1rem;
+      background-color: #fffaf3;
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#">About</a>
+    <a href="#">Sign In</a>
+    <button>Donate</button>
+  </nav>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="img/cw_logo-2.png" alt="Your logo" class="logo">
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+      <div class="hero-content">
+        <h1>Every Drop<br>Creates Lasting Change</h1>
+        <button>Donate</button>
+        <p>Donate now to fund clean water</p>
+      </div>
+    </div>
+    <div class="hero-right"></div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="impact">
+    A single act of kindness has the power to change entire communities by providing
+    safe, clean water for generations to come.
+  </section>
+
 </body>
 </html>
